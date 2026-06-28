@@ -1,4 +1,4 @@
-package com.worldvisionsoft.farminghelper.presentation.home
+package com.worldvisionsoft.farminghelper.presentation.result
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,15 +8,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun HomeScreen(
-    onLeafDiseaseClick: () -> Unit,
-    onPestClick: () -> Unit,
-    onHistoryClick: () -> Unit,
+fun ResultScreen(
+    onSaveAndViewHistory: () -> Unit,
+    onRetake: () -> Unit,
 ) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text("Home — placeholder")
+        Text("Result — placeholder")
     }
 }

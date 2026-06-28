@@ -1,4 +1,4 @@
-package com.worldvisionsoft.farminghelper.presentation.home
+package com.worldvisionsoft.farminghelper.presentation.history
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,15 +8,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun HomeScreen(
-    onLeafDiseaseClick: () -> Unit,
-    onPestClick: () -> Unit,
-    onHistoryClick: () -> Unit,
-) {
+fun HistoryScreen(onBack: () -> Unit) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text("Home — placeholder")
+        Text("History — placeholder")
     }
 }
