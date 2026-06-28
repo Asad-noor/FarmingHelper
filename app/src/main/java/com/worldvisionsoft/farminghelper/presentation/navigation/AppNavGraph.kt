@@ -7,25 +7,14 @@ import androidx.navigation.compose.composable
 import com.worldvisionsoft.farminghelper.presentation.camera.CameraScreen
 import com.worldvisionsoft.farminghelper.presentation.history.HistoryScreen
 import com.worldvisionsoft.farminghelper.presentation.home.HomeScreen
-import com.worldvisionsoft.farminghelper.presentation.permission.PermissionGateScreen
 import com.worldvisionsoft.farminghelper.presentation.result.ResultScreen
 
 @Composable
 fun AppNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Route.PermissionGate,
+        startDestination = Route.Home,
     ) {
-        composable<Route.PermissionGate> {
-            PermissionGateScreen(
-                onPermissionGranted = {
-                    navController.navigate(Route.Home) {
-                        popUpTo<Route.PermissionGate> { inclusive = true }
-                    }
-                }
-            )
-        }
-
         composable<Route.Home> {
             HomeScreen(
                 onLeafDiseaseClick = { navController.navigate(Route.Camera) },

@@ -5,9 +5,6 @@ import kotlinx.serialization.Serializable
 sealed interface Route {
 
     @Serializable
-    data object PermissionGate : Route
-
-    @Serializable
     data object Home : Route
 
     @Serializable
